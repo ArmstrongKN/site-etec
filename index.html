@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<!-- Bootstrap CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<style type="text/css">
+		.cinza{
+			background-color: #cccccc;
+		}
+	</style>
+	<title>DS</title>
+</head>
+<body>
+    <link rel="stylesheet" type="text/css" href="https://saopaulo.sp.gov.br/barra-govsp/css/topo-padrao-govsp.min.css">
+    <link rel="stylesheet" type="text/css" href="https://saopaulo.sp.gov.br/barra-govsp/css/barra-contraste-govsp.min.css">
+      <section class="govsp-topo">     
+            <div id="govsp-topbarGlobal" class="blu-e">
+                    <div id="topbarGlobal">
+                        <div id="topbarLink" class="govsp-black">
+                        <div class="govsp-portal">
+                            <a href="https://www.saopaulo.sp.gov.br" accesskey="1" title="Governo SP" target="_blank"><img src="https://saopaulo.sp.gov.br/barra-govsp/img/logo-governo-do-estado-sp.png" alt="Logo Governo SP" height="38" class="logo">
+                        </div> 
+                    </div>
+                    <nav class="govsp-navbar govsp-navbar-expand-lg">
+                        
+                            <a class="govsp-link digital" href="https://spmaisdigital.sp.gov.br" title="site SP + Digital (nova janela)" target="_blank">SP + Digital</a>
+        
+                            <a class="govsp-social" href="https://www.flickr.com/governosp/" target="_blank" title="Flickr Governo de São Paulo (nova janela)"><img class="govsp-icon-social" src="https://saopaulo.sp.gov.br/barra-govsp/img/i-flickr.png" alt="Flickr Governo de São Paulo" /></a>
+                                               
+                            <a class="govsp-social" href="https://www.linkedin.com/company/governosp/" target="_blank" title="Linkedin Governo de São Paulo (nova janela)"><img class="govsp-icon-social" src="https://saopaulo.sp.gov.br/barra-govsp/img/i-linkedin.png" alt="Linkedin Governo de São Paulo" /></a>
+        
+                            <a class="govsp-social" href="https://www.tiktok.com/@governosp" target="_blank" title="TikTok Governo de São Paulo (nova janela)"><img class="govsp-icon-social" src="https://saopaulo.sp.gov.br/barra-govsp/img/i-tiktok.png" alt="TikTok Governo de São Paulo" /></a>                        
+                            
+                            <a class="govsp-social" href="https://www.youtube.com/governosp/" target="_blank" title="Youtube Governo de São Paulo (nova janela)"><img class="govsp-icon-social" src="https://saopaulo.sp.gov.br/barra-govsp/img/i-youtube.png" alt="Youtube Governo de São Paulo" /></a>
+                            
+                            <a class="govsp-social" href="https://www.twitter.com/governosp/" target="_blank" title="Twitter Governo de São Paulo (nova janela)"><img class="govsp-icon-social" src="https://saopaulo.sp.gov.br/barra-govsp/img/i-twitter.png" alt="Twitter Governo de São Paulo" /></a>
+        
+                            <a class="govsp-social" href="https://www.instagram.com/governosp/" target="_blank" title="Instagram Governo de São Paulo"><img class="govsp-icon-social" src="https://saopaulo.sp.gov.br/barra-govsp/img/i-insta.png" alt="Instagram Governo de São Paulo" /></a>
+                            
+                            <a class="govsp-social" href="https://www.facebook.com/governosp/" target="_blank" title="Facebook Governo de São Paulo (nova janela)"><img class="govsp-icon-social" src="https://saopaulo.sp.gov.br/barra-govsp/img/i-facebook.png" alt="Facebook Governo de São Paulo" /></a>                       
+                            
+                            <p class="govsp-social">/governosp</p>
+                            <div id="separador-nav"></div>
+                            <a class="govsp-acessibilidade" href="#" id="aumentaFonte" accesskey="2" title="Aumentar Fonte"><img class="govsp-acessibilidade" src="https://saopaulo.sp.gov.br/barra-govsp/img/i-big-font.png" alt="Aumentar Fonte"></a>
+    
+                            <a class="govsp-acessibilidade" href="#" id="reduzFonte" accesskey="3" title="Diminuir Fonte"><img class="govsp-acessibilidade" src="https://saopaulo.sp.gov.br/barra-govsp/img/i-small-font.png" alt="Diminuir Fonte"></a>
+    
+                            <a class="govsp-acessibilidade" href="#" id="altocontraste" accesskey="4" title="Aplicar contraste"><img class="govsp-acessibilidade" src="https://saopaulo.sp.gov.br/barra-govsp/img/i-contrast.png" alt="Contraste"></a>
+    
+                            <a class="govsp-acessibilidade" href="https://www.saopaulo.sp.gov.br/fale-conosco/comunicar-erros/" accesskey="5" target="_blank"><img class="govsp-acessibilidade" src="https://saopaulo.sp.gov.br/barra-govsp/img/i-error-report.png"  alt="Símbolo de exclamação dentro de triângulo"></a>                        
+                    </nav>
+                </div>
+                <div class="govsp-kebab" id="govsp-kebab">
+                        <figure></figure>
+                        <figure class="govsp-middle" id="govsp-middle"></figure>
+                        <span class="govsp-cross" id="govsp-cross"></span>
+                        <figure></figure>
+                        <ul class="govsp-dropdown" id="govsp-dropdown">               
+                            <li><a class="govsp-link digital" href="https://spmaisdigital.sp.gov.br" target="_blank" title="Site SP + Digital">SP + Digital</a>
+    
+                            <li><a class="govsp-social" href="https://www.flickr.com/governosp/" target="_blank" title="Flickr Governo de São Paulo"><img class="govsp-icon-social" src="https://saopaulo.sp.gov.br/barra-govsp/img/i-flickr.png" alt="Flickr Governo de São Paulo" /></a></li>
+                            
+                            <li><a class="govsp-social" href="https://www.linkedin.com/company/governosp/" target="_blank" title="Linkedin Governo de São Paulo"><img class="govsp-icon-social" src="https://saopaulo.sp.gov.br/barra-govsp/img/i-linkedin.png" alt="Linkedin Governo de São Paulo" /></a></li>
+    
+                            <li><a class="govsp-social" href="https://www.tiktok.com/@governosp" target="_blank" title="TikTok Governo de São Paulo"><img class="govsp-icon-social" src="https://saopaulo.sp.gov.br/barra-govsp/img/i-tiktok.png" alt="TikTok Governo de São Paulo" /></a></li>
+    
+                            <li><a class="govsp-social" href="https://www.twitter.com/governosp/" target="_blank" title="Twitter Governo de São Paulo"><img class="govsp-icon-social" src="https://saopaulo.sp.gov.br/barra-govsp/img/i-twitter.png" alt="Twitter Governo de São Paulo" /></a></li>
+                            
+                            <li><a class="govsp-social" href="https://www.youtube.com/governosp/" target="_blank" title="Youtube Governo de São Paulo"><img class="govsp-icon-social" src="https://saopaulo.sp.gov.br/barra-govsp/img/i-youtube.png" alt="Youtube Governo de São Paulo" /></a></li> 
+    
+                            <li><a class="govsp-social" href="https://www.instagram.com/governosp/" target="_blank" title="Instagram Governo de São Paulo"><img class="govsp-icon-social" src="https://saopaulo.sp.gov.br/barra-govsp/img/i-insta.png" alt="Instagram Governo de São Paulo" /></a></li>
+                          
+                            <li><a class="govsp-social" href="https://www.facebook.com/governosp/" target="_blank" title="Acessar o Facebook do Governo de São Paulo"><img class="govsp-icon-social" src="https://saopaulo.sp.gov.br/barra-govsp/img/i-facebook.png" alt="Acessar o Facebook Governo de São Paulo" /></a></li>
+                            
+                            <li><p class="govsp-social">/governosp</p></li>
+                        </ul> 
+                </div>
+            </div>
+            
+            <script src="https://saopaulo.sp.gov.br/barra-govsp/js/script-topo.js"></script>
+            <script src="https://saopaulo.sp.gov.br/barra-govsp/js/script-contrast-govsp.js"></script>
+            <script src="https://saopaulo.sp.gov.br/barra-govsp/js/script-tamanho-fonte-govsp.js"></script>
+            <script src="https://saopaulo.sp.gov.br/barra-govsp/js/script-scroll.js"></script>
+            <noscript>
+              Seu navegador não tem suporte a JavaScript ou está desativado!</noscript>
+        </section>
+
+
+		<br>
+
+	<!-- usando o container fluid -->
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-12">
+				<nav class="navbar navbar-light bg-light navbar-expand-lg">
+					<a href="#" class="navbar-brand">
+						<img src="cps/logo_cps_versao_cor.png"  width="160" height="60" alt="">
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav1" >
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse justify-content-between" id="nav1">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a href="secretaria.html" class="nav-link">Secretaria</a>
+							</li>
+							<li class="nav-item">
+								<a href="eventos.html" class="nav-link">Eventos</a>
+							</li>
+							<li class="nav-item">
+								<a href="login.html" class="nav-link">Inscreva-se</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a href="#" class="nav-link dropdown-toggle" id="linkDrop" data-toggle="dropdown">
+									Cursos
+								</a>
+								<div class="dropdown-menu">
+									<a href="index.html" class="dropdown-item">Dsenvolvimento de Sistemas</a>
+									<a href="adm.html" class="dropdown-item">Administração</a>
+									<a href="log.html" class="dropdown-item">Logistica</a>								
+								</div>
+							</li>																		
+						</ul>
+						<form class="form-inline" action="">
+							<input class="from-control" type="text" placeholder="Pesquisar">
+							&nbsp;&nbsp;
+							<button class="btn btn-outline-primary" type="submit"> Buscar </button>
+						</form>
+					</div>
+				</nav>
+			</div>					
+		</div>			
+	</div>
+	<!-- jQuery, Popper.js, Bootstrap JS -->	
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="js/bootstrap.min.js"></script>
+		
+		
+				
+		 
+
+
+
+	<!-- usando o container fluid -->
+	<div class="container-fluid">
+		<nav class="breadcrumb">
+			<a href="home.html" class="breadcrumb-item">Home</a>
+			<a href="#" class="breadcrumb-item">Médio Técnico ADM</a>
+			<a href="#" class="breadcrumb-item active">Médio Técnico DS</a>		
+		</nav>
+	</div>
+	<!-- jQuery, Popper.js, Bootstrap JS -->	
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+
+
+	<!-- usando o container fluid -->
+	<div class="container-fluid">
+		<h3> Desenvolvimento de Sistemas <span class="badge badge-info">ETEC</span></h3>
+	</div>
+	<!-- jQuery, Popper.js, Bootstrap JS -->	
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+
+
+	<!-- usando o container fluid -->
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-6">
+				<div class="carousel slide" data-ride="carousel">
+					<div class="carousel-inner">
+						<div class="carousel-item">
+							<img class="d-block w-100" src="imagens_kioshi/WhatsApp Image 2023-05-31 at 20.32.41.jpeg" alt="sala de aula">
+						</div>
+						<div class="carousel-item active">
+							<img class="d-block w-100" src="imagens_kioshi/WhatsApp Image 2023-05-31 at 20.32.42.jpeg" alt="sala de aula">
+						</div>
+						<div class="carousel-item">
+							<img class="d-block w-100" src="imagens_kioshi/curso-desenvolvimento-de-sistemas.jpg" alt="pessoa no pc">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- jQuery, Popper.js, Bootstrap JS -->	
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script>
+		$('.carousel').carousel();
+	</script>
+
+
+
+	<!-- usando o container fluid -->
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-6">
+				<div id="accordion">
+					<div class="card">
+						<div class="card-header" id="heading1">
+							<h5 class="mb-0">
+								<button class="btn btn-link" data-toggle="collapse" data-target="#collapse1">
+									1º Módulo
+								</button>
+							</h5>
+						</div>
+
+						<div id="collapse1" class="collapse show"  data-parent="#accordion">
+							<div class="card-body">
+								  Qualificação Profissional Técnica De Nivel Médio De Auxiliar Em Desenvolvimento De Sistemas
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header" id="heading2">
+							<h5 class="mb-0">
+								<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse2">
+									2º Módulo
+								</button>
+							</h5>
+						</div>
+						<div id="collapse2" class="collapse"  data-parent="#accordion">
+							<div class="card-body">
+								  Qualificação Profissional Técnica De Nivel Médio De Assistente Auxiliar Em Programador De Computadores
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header" id="heading3">
+							<h5 class="mb-0">
+								<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse3">
+									3º Módulo
+								</button>
+							</h5>
+						</div>
+						<div id="collapse3" class="collapse"  data-parent="#accordion">
+							<div class="card-body">
+								  Habilitação Profissional De Técnico Em Desenvolvimento De Sistemas
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>					
+		</div>			
+	</div>
+	<!-- jQuery, Popper.js, Bootstrap JS -->	
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+
+	<!-- usando o container fluid -->
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-12">
+				<div class="card-group">
+					<div class="card">
+						<img src="imagens_kioshi/pessoas_estudando.jpeg"  class="card-img-top">
+						<div class="card-body">
+							<h4 class="card-title">Descrição</h4>
+							<h6 class="card-subtitle text-muted">Desenvolvimento de Sistema</h6>
+							<p class="card-text">
+								O TÉCNICO EM DESENVOLVIMENTO DE SISTEMAS é o profissional que analisa e projeta sistemas. Constrói, documenta, realiza testes e mantém sistemas de informação. Utiliza ambientes de desenvolvimento e linguagens de programação específica. Modela, implementa e mantém bancos de dados.
+							</p>
+						</div>
+					</div>
+					<div class="card"]>
+						<img src="imagens_kioshi/modalidade.jpeg"  class="card-img-top">
+						<div class="card-body">
+							<h4 class="card-title">Sobre a Modalidade</h4>
+							<h6 class="card-subtitle text-muted">Desenvolvimento de Sistema</h6>
+							<p class="card-text">
+								Nesta modalidade de ensino, o aluno cursará o Ensino Técnico com o objetivo de complementar a educação profissional do aluno e preparar o jovem para o mercado de trabalho, numa jornada de até 25 aulas semanais (até 5 aulas diárias), em cada um dos módulos
+							</p>
+						</div>
+					</div>
+					<div class="card"]>
+						<img src="imagens_kioshi/DS_trabalho.jpeg"  class="card-img-top">
+						<div class="card-body">
+							<h4 class="card-title">Mercado de Trabalho</h4>
+							<h6 class="card-subtitle text-muted">Desenvolvimento de Sistema</h6>
+							<p class="card-text">
+								Empresas e departamentos de desenvolvimento de sistemas em organizações governamentais e não governamentais, podendo também atuar como profissional autônomo.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- jQuery, Popper.js, Bootstrap JS -->	
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+        <link rel="stylesheet" type="text/css" href="https://www.saopaulo.sp.gov.br/barra-govsp/css/rodape-padrao-govsp.min.css"> 
+  <section id="govsp-rodape">         
+      <div class="container">
+        <div class="linha-botoes">
+            <div class="coluna-4">
+              <a href="https://www.ouvidoria.sp.gov.br/Portal/Default.aspx" class="btn btn-model">Ouvidoria</a>
+            </div> 
+    
+            <div class="coluna-4">
+              <a href="http://www.transparencia.sp.gov.br/" class="btn btn-model">Transparência</a>
+            </div> 
+    
+            <div class="coluna-4">
+              <a href="http://www.sic.sp.gov.br/" class="btn btn-model">SIC</a>
+            </div> 
+        </div>
+        </div>
+    
+        <div class="container rodape">    
+          <div class="logo-rodape">
+            <p>
+              <a href="https://www.saopaulo.sp.gov.br/">
+                <img src="https://www.saopaulo.sp.gov.br/barra-govsp/img/logo-rodape-governo-do-estado-sp.png" alt="Logo" width="206" height="38">
+              </a>
+            </p>
+          </div>
+    
+        </div>
+  </section>
+
+</body>
+</html>

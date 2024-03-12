@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<!-- Bootstrap CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<style type="text/css">
+		.cinza{
+			background-color: #cccccc;
+		}
+	</style>
+	<title>Eventos</title>
+</head>
+<body>
+    <link rel="stylesheet" type="text/css" href="https://saopaulo.sp.gov.br/barra-govsp/css/topo-padrao-govsp.min.css">
+    <link rel="stylesheet" type="text/css" href="https://saopaulo.sp.gov.br/barra-govsp/css/barra-contraste-govsp.min.css">
+      <section class="govsp-topo">     
+            <div id="govsp-topbarGlobal" class="blu-e">
+                    <div id="topbarGlobal">
+                        <div id="topbarLink" class="govsp-black">
+                        <div class="govsp-portal">
+                            <a href="https://www.saopaulo.sp.gov.br" accesskey="1" title="Governo SP" target="_blank"><img src="https://saopaulo.sp.gov.br/barra-govsp/img/logo-governo-do-estado-sp.png" alt="Logo Governo SP" height="38" class="logo">
+                        </div> 
+                    </div>
+                    <nav class="govsp-navbar govsp-navbar-expand-lg">
+                        
+                            <a class="govsp-link digital" href="https://spmaisdigital.sp.gov.br" title="site SP + Digital (nova janela)" target="_blank">SP + Digital</a>
+        
+                            <a class="govsp-social" href="https://www.flickr.com/governosp/" target="_blank" title="Flickr Governo de São Paulo (nova janela)"><img class="govsp-icon-social" src="https://saopaulo.sp.gov.br/barra-govsp/img/i-flickr.png" alt="Flickr Governo de São Paulo" /></a>
+                                               
+                            <a class="govsp-social" href="https://www.linkedin.com/company/governosp/" target="_blank" title="Linkedin Governo de São Paulo (nova janela)"><img class="govsp-icon-social" src="https://saopaulo.sp.gov.br/barra-govsp/img/i-linkedin.png" alt="Linkedin Governo de São Paulo" /></a>
+        
+                            <a class="govsp-social" href="https://www.tiktok.com/@governosp" target="_blank" title="TikTok Governo de São Paulo (nova janela)"><img class="govsp-icon-social" src="https://saopaulo.sp.gov.br/barra-govsp/img/i-tiktok.png" alt="TikTok Governo de São Paulo" /></a>                        
+                            
+                            <a class="govsp-social" href="https://www.youtube.com/governosp/" target="_blank" title="Youtube Governo de São Paulo (nova janela)"><img class="govsp-icon-social" src="https://saopaulo.sp.gov.br/barra-govsp/img/i-youtube.png" alt="Youtube Governo de São Paulo" /></a>
+                            
+                            <a class="govsp-social" href="https://www.twitter.com/governosp/" target="_blank" title="Twitter Governo de São Paulo (nova janela)"><img class="govsp-icon-social" src="https://saopaulo.sp.gov.br/barra-govsp/img/i-twitter.png" alt="Twitter Governo de São Paulo" /></a>
+        
+                            <a class="govsp-social" href="https://www.instagram.com/governosp/" target="_blank" title="Instagram Governo de São Paulo"><img class="govsp-icon-social" src="https://saopaulo.sp.gov.br/barra-govsp/img/i-insta.png" alt="Instagram Governo de São Paulo" /></a>
+                            
+                            <a class="govsp-social" href="https://www.facebook.com/governosp/" target="_blank" title="Facebook Governo de São Paulo (nova janela)"><img class="govsp-icon-social" src="https://saopaulo.sp.gov.br/barra-govsp/img/i-facebook.png" alt="Facebook Governo de São Paulo" /></a>                       
+                            
+                            <p class="govsp-social">/governosp</p>
+                            <div id="separador-nav"></div>
+                            <a class="govsp-acessibilidade" href="#" id="aumentaFonte" accesskey="2" title="Aumentar Fonte"><img class="govsp-acessibilidade" src="https://saopaulo.sp.gov.br/barra-govsp/img/i-big-font.png" alt="Aumentar Fonte"></a>
+    
+                            <a class="govsp-acessibilidade" href="#" id="reduzFonte" accesskey="3" title="Diminuir Fonte"><img class="govsp-acessibilidade" src="https://saopaulo.sp.gov.br/barra-govsp/img/i-small-font.png" alt="Diminuir Fonte"></a>
+    
+                            <a class="govsp-acessibilidade" href="#" id="altocontraste" accesskey="4" title="Aplicar contraste"><img class="govsp-acessibilidade" src="https://saopaulo.sp.gov.br/barra-govsp/img/i-contrast.png" alt="Contraste"></a>
+    
+                            <a class="govsp-acessibilidade" href="https://www.saopaulo.sp.gov.br/fale-conosco/comunicar-erros/" accesskey="5" target="_blank"><img class="govsp-acessibilidade" src="https://saopaulo.sp.gov.br/barra-govsp/img/i-error-report.png"  alt="Símbolo de exclamação dentro de triângulo"></a>                        
+                    </nav>
+                </div>
+                <div class="govsp-kebab" id="govsp-kebab">
+                        <figure></figure>
+                        <figure class="govsp-middle" id="govsp-middle"></figure>
+                        <span class="govsp-cross" id="govsp-cross"></span>
+                        <figure></figure>
+                        <ul class="govsp-dropdown" id="govsp-dropdown">               
+                            <li><a class="govsp-link digital" href="https://spmaisdigital.sp.gov.br" target="_blank" title="Site SP + Digital">SP + Digital</a>
+    
+                            <li><a class="govsp-social" href="https://www.flickr.com/governosp/" target="_blank" title="Flickr Governo de São Paulo"><img class="govsp-icon-social" src="https://saopaulo.sp.gov.br/barra-govsp/img/i-flickr.png" alt="Flickr Governo de São Paulo" /></a></li>
+                            
+                            <li><a class="govsp-social" href="https://www.linkedin.com/company/governosp/" target="_blank" title="Linkedin Governo de São Paulo"><img class="govsp-icon-social" src="https://saopaulo.sp.gov.br/barra-govsp/img/i-linkedin.png" alt="Linkedin Governo de São Paulo" /></a></li>
+    
+                            <li><a class="govsp-social" href="https://www.tiktok.com/@governosp" target="_blank" title="TikTok Governo de São Paulo"><img class="govsp-icon-social" src="https://saopaulo.sp.gov.br/barra-govsp/img/i-tiktok.png" alt="TikTok Governo de São Paulo" /></a></li>
+    
+                            <li><a class="govsp-social" href="https://www.twitter.com/governosp/" target="_blank" title="Twitter Governo de São Paulo"><img class="govsp-icon-social" src="https://saopaulo.sp.gov.br/barra-govsp/img/i-twitter.png" alt="Twitter Governo de São Paulo" /></a></li>
+                            
+                            <li><a class="govsp-social" href="https://www.youtube.com/governosp/" target="_blank" title="Youtube Governo de São Paulo"><img class="govsp-icon-social" src="https://saopaulo.sp.gov.br/barra-govsp/img/i-youtube.png" alt="Youtube Governo de São Paulo" /></a></li> 
+    
+                            <li><a class="govsp-social" href="https://www.instagram.com/governosp/" target="_blank" title="Instagram Governo de São Paulo"><img class="govsp-icon-social" src="https://saopaulo.sp.gov.br/barra-govsp/img/i-insta.png" alt="Instagram Governo de São Paulo" /></a></li>
+                          
+                            <li><a class="govsp-social" href="https://www.facebook.com/governosp/" target="_blank" title="Acessar o Facebook do Governo de São Paulo"><img class="govsp-icon-social" src="https://saopaulo.sp.gov.br/barra-govsp/img/i-facebook.png" alt="Acessar o Facebook Governo de São Paulo" /></a></li>
+                            
+                            <li><p class="govsp-social">/governosp</p></li>
+                        </ul> 
+                </div>
+            </div>
+            
+            <script src="https://saopaulo.sp.gov.br/barra-govsp/js/script-topo.js"></script>
+            <script src="https://saopaulo.sp.gov.br/barra-govsp/js/script-contrast-govsp.js"></script>
+            <script src="https://saopaulo.sp.gov.br/barra-govsp/js/script-tamanho-fonte-govsp.js"></script>
+            <script src="https://saopaulo.sp.gov.br/barra-govsp/js/script-scroll.js"></script>
+            <noscript>
+              Seu navegador não tem suporte a JavaScript ou está desativado!</noscript>
+        </section>
+
+ <br>
+
+
+
+	<!-- usando o container fluid -->
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-12">
+				<nav class="navbar navbar-light bg-light navbar-expand-lg">
+					<a href="#" class="navbar-brand">
+						<img src="cps/logo_cps_versao_cor.png"  width="160" height="60" alt="logo cps">
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav1" >
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse justify-content-between" id="nav1">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a href="secretaria.html" class="nav-link">Secretaria</a>
+							</li>
+							<li class="nav-item">
+								<a href="eventos.html" class="nav-link">Eventos</a>
+							</li>
+							<li class="nav-item">
+								<a href="login.html" class="nav-link">Inscreva-se</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a href="#" class="nav-link dropdown-toggle" id="linkDrop" data-toggle="dropdown">
+									Cursos
+								</a>
+								<div class="dropdown-menu">
+									<a href="index.html" class="dropdown-item">Dsenvolvimento de Sistemas</a>
+									<a href="adm.html" class="dropdown-item">Administração</a>
+									<a href="log.html" class="dropdown-item">Logistica</a>								
+								</div>
+							</li>																		
+						</ul>
+						<form class="form-inline" action="">
+							<input class="from-control" type="text" placeholder="Pesquisar">
+							&nbsp;&nbsp;
+							<button class="btn btn-outline-primary" type="submit"> Buscar </button>
+						</form>
+					</div>
+				</nav>
+			</div>					
+		</div>			
+	</div>
+	<!-- jQuery, Popper.js, Bootstrap JS -->	
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+
+        
+	<!-- usando o container fluid -->
+	<div class="container-fluid">
+		<nav class="breadcrumb">
+			<a href="home.html" class="breadcrumb-item">Home</a>
+			<a href="#" class="breadcrumb-item">Médio Técnico ADM</a>
+			<a href="#" class="breadcrumb-item active">Médio Técnico DS</a>		
+		</nav>
+	</div>
+
+
+
+
+
+	<!-- usando o container fluid -->
+	<div class="container-fluid">
+		<h3> Eventos <span class="badge badge-info">ETEC</span></h3>
+	</div>
+	<!-- jQuery, Popper.js, Bootstrap JS -->	
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+    	<!-- usando o container fluid -->
+		<div class="container-fluid">
+			<img src="imagens_kioshi/festa jun etec red.jpeg" class="img-fluid"/>
+		</div>
+		<!-- jQuery, Popper.js, Bootstrap JS -->	
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+		<script src="js/bootstrap.min.js"></script>
+
+
+    	<!-- usando o container fluid -->
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-10">
+			<p class="text-justify">
+				Eventos de Guarulhos
+				<br>
+				 Mês de junho começa com festas juninas e diversão neste fim de semana!
+			</p>
+			<p class="text-justify col-5">
+				“Tem festança junina da boa vindo aí!”. Os eventos de Guarulhos começam o mês de junho com diversas comemorações na cidade, com o Arraiá da ETEC e do Bosque Maia.
+			</p>							
+			</div>
+		</div>
+	</div>
+	<!-- jQuery, Popper.js, Bootstrap JS -->	
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+
+
+	<!-- usando o container fluid -->
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-12">
+				<button type="button" class="btn btn-sm btn-success" data-toggle="popover" title="Mês de Festa Junina" data-content=" Junho traz festas temáticas durante o mês inteiro no município, e para não perder nenhuma fique ligado na programação da agenda cultural de Guarulhos.">Clique aqui e saiba mais!!!</button>
+
+			</div>					
+		</div>			
+	</div>
+	<!-- jQuery, Popper.js, Bootstrap JS -->	
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script>
+		$(function () {
+			$('[data-toggle="popover"]').popover()
+		})
+	</script>
+
+
+			<!-- usando o container fluid -->
+			<div class="container-fluid">
+				<img src="imagens_kioshi/concurso publico.png" class="img-fluid"/>
+			</div>
+			<!-- jQuery, Popper.js, Bootstrap JS -->	
+			<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+			<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+			<script src="js/bootstrap.min.js"></script>
+
+
+
+
+     	<!-- usando o container fluid -->
+		 <div class="container-fluid">
+			<div class="row">
+				<div class="col-10">
+				<p class="text-justify">
+					Concurso Público
+					<br>
+					Estão em andamento concursos públicos para contratação de 2,7 mil docentes e servidores administrativos para atuar em
+					<br>
+					 Escolas Técnicas (Etecs), Faculdades de Tecnologia (Fatecs) do Estado e na Administração Central do Centro Paula Souza (CPS).
+				</p>
+				<p class="text-justify col-5">
+					A previsão é contratar 993 professores de Ensino Médio e Técnico, 594 docentes de Ensino Superior, 887 agentes técnicos e administrativos, 227 bibliotecários e 6 especialistas em planejamento educacional. O professor admitido para atuar no Ensino Médio ou Técnico das Etecs recebe uma remuneração inicial de R$ 20,19 hora-aula. Por exemplo, o docente com atribuição máxima de 34 horas-aula semanais, pode chegar a um salário de R$ 4.685,08.
+ 
+				</p>							
+				</div>
+			</div>
+		</div>
+		<!-- jQuery, Popper.js, Bootstrap JS -->	
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	
+
+	<!-- usando o container fluid -->
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-12">
+				<button type="button" class="btn btn-sm btn-success" data-toggle="popover" title="Fatecs" data-content="Já nos cursos superiores de tecnologia das Fatecs, o valor da hora-aula inicial para os ingressantes é de R$ 34,13. Sendo assim, um docente com atribuição máxima de 28 horas-aula semanais, receberia a quantia de R$ 7.794,43.">Curso superior paga mais!!! Saiba quanto</button>
+
+			</div>					
+		</div>			
+	</div>
+	<!-- jQuery, Popper.js, Bootstrap JS -->	
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script>
+		$(function () {
+			$('[data-toggle="popover"]').popover()
+		})
+	</script>
+
+<br><br>
+
+			<!-- usando o container fluid -->
+			<div class="container-fluid">
+				<img src="imagens_kioshi/fut.Femin.jpg" class="img-fluid"/>
+			</div>
+			<!-- jQuery, Popper.js, Bootstrap JS -->	
+			<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+			<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+			<script src="js/bootstrap.min.js"></script>
+
+
+
+
+     	<!-- usando o container fluid -->
+		 <div class="container-fluid">
+			<div class="row">
+				<div class="col-10">
+				<p class="text-justify">
+					Futebol
+					<br>
+					Estudantes, atletas, educadores, gestores e demais interessados em esportes têm até o dia 9 de junho para 
+					<br>
+					se inscrever gratuitamente na primeira edição do Meeting de Futebol Feminino.
+				</p>
+				<p class="text-justify col-5">
+				    O evento será realizado na Escola Técnica Estadual (Etec) de Esportes – Curt Walter Otto Baumgart, localizada no Parque Novo Mundo, na Capital, no dia 21 do mesmo mês. 
+				</p>							
+				</div>
+			</div>
+		</div>
+		<!-- jQuery, Popper.js, Bootstrap JS -->	
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+
+ 	<!-- usando o container fluid -->
+	 <div class="container-fluid">
+		<div class="row">
+			<div class="col-12">
+				<button type="button" class="btn btn-sm btn-success" data-toggle="popover" title="Futebol Feminino" data-content="O evento acontece um mês antes da partida de abertura da Copa do Mundo Feminina, que começa dia 20 de julho e que terá como sede a Austrália e Nova Zelândia.">Junto com a Copa !!!</button>
+
+			</div>					 
+		</div>			
+	</div>
+	<!-- jQuery, Popper.js, Bootstrap JS -->	
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script>
+		$(function () {
+			$('[data-toggle="popover"]').popover()
+		})
+	</script>
+
+
+<br><br>
+
+	<!-- usando o container fluid -->
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-12">
+				<div class="list-group">
+					<a href="https://www.cps.sp.gov.br/professora-de-historia-do-cps-explica-origem-da-festa-junina/" class="list-group-item list-group-item-action">
+						<div>
+							<h5>Festa Junina </h5>
+							<small>24/06/2023</small>
+						</div>
+						<p>
+							Arraiá da ETEC
+                        <br>
+                          A Etec de Guarulhos (R. Cristóbal Cláudio Elillo, 88, Parque Cecap, Cep: 07190-065, Guarulhos - SP) promove no sábado, 24 de junho, a partir das 14h, o Arraiá da ETEC, com diversas barraquinhas com comidas típicas e muita diversão. Prestigie!
+						</p>
+					</a>
+					<a href="https://www.cps.sp.gov.br/concursopublico/" class="list-group-item list-group-item-action">
+						<div>
+							<h5>❤️ Vem Concurso Público por aí! ❤️</h5>
+							<small>08/06/2020 até 22/06/2023</small>
+						</div>
+						<p>
+							
+
+                           👨‍🏫👩‍🏫 Destinado a professores de Língua Inglesa , o concurso visa selecionar docente habilitado a ministrar aulas de Língua Inglesa para o Ensino Médio. Se interessou? Veja regras e como se inscrever no site de Concursos do Centro Paula Souza (www.cps.sp.gov.br).
+						</p>
+					</a>
+					<a href="https://www.cps.sp.gov.br/etec-de-esportes-realiza-primeiro-meeting-de-futebol-feminino/" class="list-group-item list-group-item-action">
+						<div>
+							<h5>Fatec de Esportes</h5>
+							<small>02/06/2020</small>
+						</div>
+						<p>
+							
+                            A Futura Fatec de Esportes, que vai dividir o mesmo campus com a Etec, oferece 40 vagas no período da noite para o inédito curso superior de tecnologia em Gestão Desportiva e de Lazer no processo seletivo para o segundo semestre de 2023. As inscrições estão abertas até 15 horas de 2 de junho, pelo site vestibularfatec.com.br.
+						</p>
+					</a>					
+				</div>
+			</div>					
+		</div>			
+	</div>
+	<!-- jQuery, Popper.js, Bootstrap JS -->	
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+
+
+
+        
+        <link rel="stylesheet" type="text/css" href="https://www.saopaulo.sp.gov.br/barra-govsp/css/rodape-padrao-govsp.min.css"> 
+  <section id="govsp-rodape">         
+      <div class="container">
+        <div class="linha-botoes">
+            <div class="coluna-4">
+              <a href="https://www.ouvidoria.sp.gov.br/Portal/Default.aspx" class="btn btn-model">Ouvidoria</a>
+            </div> 
+    
+            <div class="coluna-4">
+              <a href="http://www.transparencia.sp.gov.br/" class="btn btn-model">Transparência</a>
+            </div> 
+    
+            <div class="coluna-4">
+              <a href="http://www.sic.sp.gov.br/" class="btn btn-model">SIC</a>
+            </div> 
+        </div>
+        </div>
+    
+        <div class="container rodape">    
+          <div class="logo-rodape">
+            <p>
+              <a href="https://www.saopaulo.sp.gov.br/">
+                <img src="https://www.saopaulo.sp.gov.br/barra-govsp/img/logo-rodape-governo-do-estado-sp.png" alt="Logo" width="206" height="38">
+              </a>
+            </p>
+          </div>
+    
+        </div>
+  </section>
+
+</body>
+</html>
